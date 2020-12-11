@@ -1,5 +1,5 @@
 # social-network-api
-This si aproject where I built the APIs for the backend for a social netowrk web application. It allows users to share their thoughts, are able to react to friend's thoughts, and create a friends list.
+This is a project where I built the APIs on the backend for a social netowrk web application. It allows users to share their thoughts, are able to react to friend's thoughts, and create a friends list.
 
 ## Tools and languages used
 * MongoDB 
