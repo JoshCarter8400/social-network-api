@@ -6,11 +6,13 @@ This si aproject where I built the APIs for the backend for a social netowrk web
 * Mongoose
 * Express
 * Node
+* Nodemon
 
 ## Installation and Setup
  * Clone this repo to your machine
  * Install MongoDB [here](https://docs.mongodb.com/manual/installation)
  * Install Node [here](https://nodejs.org/en/download/) 
+ * Install Nodemon [here](https://www.npmjs.com/package/nodemon)
  * Install Mongoose [here](https://mongoosejs.com/docs/)
  * Install Express [here](https://expressjs.com/en/starter/installing.html)
  
