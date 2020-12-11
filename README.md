@@ -17,7 +17,7 @@ This si aproject where I built the APIs for the backend for a social netowrk web
  * Install Express [here](https://expressjs.com/en/starter/installing.html)
  
  ## Usage
- * To start the application once everything is installed you can run npm start to start the process and create your network
+ * To start the application once everything is installed you can run nodemon server.js to start the process and create your network
   
  ## Demo of app
  You can view a walkthrough video of the app [here](https://drive.google.com/file/d/1H2R_atiZEcf-uUr-vq3F6lPYtz0X6ZeV/view)
