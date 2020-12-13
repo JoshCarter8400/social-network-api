@@ -20,10 +20,7 @@ router
   .put(updateThought)
   .delete(deleteThought);
 
-router
-  .route("/:id/thoughts/:thoughtsId")
-  .post(addReaction)
-  .delete(deleteReaction);
+router.route("/:thoughtId/reactions").post(addReaction).delete(deleteReaction);
 
 // delete thought by id
 // router.route("/:thoughtId");

@@ -8,6 +8,10 @@ const thoughtController = {
         path: "reactions",
         select: "-__v",
       })
+      .populate({
+        path: "thoughts",
+        select: "-__v",
+      })
       .select("-__v")
       .then((dbThoughtData) => res.json(dbThoughtData))
       .catch((err) => {
@@ -76,7 +80,7 @@ const thoughtController = {
       .catch((err) => res.status(400).json(err));
   },
   // add Reaction
-  addReaction({ params }, res) {
+  addReaction({ params, body }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
       { $addToSet: { reactions: body } },
@@ -84,7 +88,7 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: "No user with this id" });
+          res.status(404).json({ message: "No thought with this id" });
           return;
         }
         res.json(dbThoughtData);
